@@ -43,3 +43,7 @@ CREATE TABLE public.login
     isactive boolean NOT NULL,
     CONSTRAINT "Login_pkey" PRIMARY KEY (id)
 )
+
+INSERT INTO public.login(
+	id, username, password, isadmin, isactive)
+	VALUES ('963ad2b2-ffc3-4d6e-93ed-75681a98e0e1', 'shopbridge', 'admin', true, true);

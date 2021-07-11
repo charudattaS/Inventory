@@ -1,0 +1,45 @@
+CREATE DATABASE "Inventory"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+
+CREATE TABLE public.itemcategorydemo
+(
+    id uuid NOT NULL,
+    name character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    isactive boolean,
+    CONSTRAINT itemcategorydemo_pkey PRIMARY KEY (id)
+)
+
+CREATE TABLE public.itemcostdetails
+(
+    id uuid NOT NULL,
+    itemid uuid NOT NULL,
+    cost double precision,
+    isactive boolean NOT NULL
+)
+
+CREATE TABLE public.itemdemo
+(
+    id uuid NOT NULL,
+    name character varying COLLATE pg_catalog."default" NOT NULL,
+    itemcategorydemoid uuid NOT NULL,
+    purchasein bigint,
+    purchaseout bigint,
+    isactive boolean NOT NULL,
+    CONSTRAINT itemdemo_pkey PRIMARY KEY (id)
+)
+
+CREATE TABLE public.login
+(
+    id uuid NOT NULL,
+    username character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    password character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    isadmin boolean NOT NULL,
+    isactive boolean NOT NULL,
+    CONSTRAINT "Login_pkey" PRIMARY KEY (id)
+)

@@ -180,11 +180,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Assignment\\Inventory\\DalAccess\\DalAccess.csproj",
+      "projectUniqueName": "D:\\InventoryProject\\Inventory\\DalAccess\\DalAccess.csproj",
       "projectName": "DalAccess",
-      "projectPath": "D:\\Assignment\\Inventory\\DalAccess\\DalAccess.csproj",
+      "projectPath": "D:\\InventoryProject\\Inventory\\DalAccess\\DalAccess.csproj",
       "packagesPath": "C:\\Users\\charu\\.nuget\\packages\\",
-      "outputPath": "D:\\Assignment\\Inventory\\DalAccess\\obj\\",
+      "outputPath": "D:\\InventoryProject\\Inventory\\DalAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\charu\\AppData\\Roaming\\NuGet\\NuGet.Config",

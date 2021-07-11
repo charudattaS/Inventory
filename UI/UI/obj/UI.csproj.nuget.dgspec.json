@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\charu\\source\\repos\\UI\\UI\\UI.csproj": {}
+    "D:\\InventoryProject\\UI\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\charu\\source\\repos\\UI\\UI\\UI.csproj": {
+    "D:\\InventoryProject\\UI\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\charu\\source\\repos\\UI\\UI\\UI.csproj",
+        "projectUniqueName": "D:\\InventoryProject\\UI\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\charu\\source\\repos\\UI\\UI\\UI.csproj",
+        "projectPath": "D:\\InventoryProject\\UI\\UI\\UI.csproj",
         "packagesPath": "C:\\Users\\charu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\charu\\source\\repos\\UI\\UI\\obj\\",
+        "outputPath": "D:\\InventoryProject\\UI\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\charu\\AppData\\Roaming\\NuGet\\NuGet.Config",

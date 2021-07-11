@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6PzbydtLU2TZ9QtM3msrCT1p2u3vnaxNDWfyTOwhE6UvGFrHTE/4k+GpGsoPgFCIraoDQBxYsksiEMn0Ul1x0Q==",
+  "dgSpecHash": "RBHvnAq5m11tveamyvb2sqJejojI5kMeOhO29aK5U6cPTGzsUs5nhTTDu1If7Vc2vfaIdRjEqYcEKAkoPOoPgA==",
   "success": true,
-  "projectFilePath": "D:\\Assignment\\Inventory\\DalAccess\\DalAccess.csproj",
+  "projectFilePath": "D:\\InventoryProject\\Inventory\\DalAccess\\DalAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

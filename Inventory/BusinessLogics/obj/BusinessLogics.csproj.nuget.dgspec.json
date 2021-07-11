@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Assignment\\Inventory\\BusinessLogics\\BusinessLogics.csproj": {}
+    "D:\\InventoryProject\\Inventory\\BusinessLogics\\BusinessLogics.csproj": {}
   },
   "projects": {
-    "D:\\Assignment\\Inventory\\BusinessLogics\\BusinessLogics.csproj": {
+    "D:\\InventoryProject\\Inventory\\BusinessLogics\\BusinessLogics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Assignment\\Inventory\\BusinessLogics\\BusinessLogics.csproj",
+        "projectUniqueName": "D:\\InventoryProject\\Inventory\\BusinessLogics\\BusinessLogics.csproj",
         "projectName": "BusinessLogics",
-        "projectPath": "D:\\Assignment\\Inventory\\BusinessLogics\\BusinessLogics.csproj",
+        "projectPath": "D:\\InventoryProject\\Inventory\\BusinessLogics\\BusinessLogics.csproj",
         "packagesPath": "C:\\Users\\charu\\.nuget\\packages\\",
-        "outputPath": "D:\\Assignment\\Inventory\\BusinessLogics\\obj\\",
+        "outputPath": "D:\\InventoryProject\\Inventory\\BusinessLogics\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\charu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Assignment\\Inventory\\DalAccess\\DalAccess.csproj": {
-                "projectPath": "D:\\Assignment\\Inventory\\DalAccess\\DalAccess.csproj"
+              "D:\\InventoryProject\\Inventory\\DalAccess\\DalAccess.csproj": {
+                "projectPath": "D:\\InventoryProject\\Inventory\\DalAccess\\DalAccess.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "D:\\Assignment\\Inventory\\DalAccess\\DalAccess.csproj": {
+    "D:\\InventoryProject\\Inventory\\DalAccess\\DalAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Assignment\\Inventory\\DalAccess\\DalAccess.csproj",
+        "projectUniqueName": "D:\\InventoryProject\\Inventory\\DalAccess\\DalAccess.csproj",
         "projectName": "DalAccess",
-        "projectPath": "D:\\Assignment\\Inventory\\DalAccess\\DalAccess.csproj",
+        "projectPath": "D:\\InventoryProject\\Inventory\\DalAccess\\DalAccess.csproj",
         "packagesPath": "C:\\Users\\charu\\.nuget\\packages\\",
-        "outputPath": "D:\\Assignment\\Inventory\\DalAccess\\obj\\",
+        "outputPath": "D:\\InventoryProject\\Inventory\\DalAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\charu\\AppData\\Roaming\\NuGet\\NuGet.Config",

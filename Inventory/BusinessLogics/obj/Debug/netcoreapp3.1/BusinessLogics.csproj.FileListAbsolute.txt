@@ -26,3 +26,17 @@ D:\Assignment\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.cs
 D:\Assignment\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.csproj.CopyComplete
 D:\Assignment\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.dll
 D:\Assignment\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.pdb
+D:\InventoryProject\Inventory\BusinessLogics\bin\Debug\netcoreapp3.1\BusinessLogics.deps.json
+D:\InventoryProject\Inventory\BusinessLogics\bin\Debug\netcoreapp3.1\BusinessLogics.dll
+D:\InventoryProject\Inventory\BusinessLogics\bin\Debug\netcoreapp3.1\BusinessLogics.pdb
+D:\InventoryProject\Inventory\BusinessLogics\bin\Debug\netcoreapp3.1\DalAccess.dll
+D:\InventoryProject\Inventory\BusinessLogics\bin\Debug\netcoreapp3.1\Model.dll
+D:\InventoryProject\Inventory\BusinessLogics\bin\Debug\netcoreapp3.1\DalAccess.pdb
+D:\InventoryProject\Inventory\BusinessLogics\bin\Debug\netcoreapp3.1\Model.pdb
+D:\InventoryProject\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.csproj.AssemblyReference.cache
+D:\InventoryProject\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.AssemblyInfoInputs.cache
+D:\InventoryProject\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.AssemblyInfo.cs
+D:\InventoryProject\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.csproj.CoreCompileInputs.cache
+D:\InventoryProject\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.csproj.CopyComplete
+D:\InventoryProject\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.dll
+D:\InventoryProject\Inventory\BusinessLogics\obj\Debug\netcoreapp3.1\BusinessLogics.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S+NXJIRPD7lnbfRLPI3iOsNwcuhkgbkCrYMg+0B8UeEMrfaRlj2dOb6yOUQoaWwmKq9/e/zTsXqJIoq3pec6Vg==",
+  "dgSpecHash": "grNXasPwm6tcwdQDrVb0GzncP5Yx4ypMdg7u8XDcB7Za/Ll0fhqUBkG/PRE1U+SWRpT+izbTFxLLrKqBcvZnTA==",
   "success": true,
-  "projectFilePath": "D:\\Assignment\\Inventory\\InventoryWebApi\\InventoryWebApi.csproj",
+  "projectFilePath": "D:\\InventoryProject\\Inventory\\InventoryWebApi\\InventoryWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

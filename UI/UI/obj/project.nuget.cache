@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IleQIqNL7gfyXr2MCdtEFDov/Tq/ZYGJEWPdhSTWrW7b3CkEjoFMGm/H9bEma04590NyfoMdGm3Qqu8XLAWu6w==",
+  "dgSpecHash": "AxmzC9sgjMt9Mt4jurY5/2W0PuLPIz0TzARNcrWdlPiIKbXu9gQWMUiaBklYoESJxx7wYxVX/1wo0CgVKu6eUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\charu\\source\\repos\\UI\\UI\\UI.csproj",
+  "projectFilePath": "D:\\InventoryProject\\UI\\UI\\UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\charu\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\charu\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",

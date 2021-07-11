@@ -69,14 +69,22 @@
             {
                 foreach (var item in Model)
                 {
-                    <tr>
-                        <th scope="row">@item.ItemCategoryName</th>
-                        <th scope="row">@item.Name</th>
-                        <th scope="row">@item.Stock</th>
-                        <th scope="row">@Html.ActionLink("Transaction", "Edit", new { id = @item.Id })</th>
+            <tr>
+                <th scope="row">@item.ItemCategoryName</th>
+                <th scope="row">@item.Name</th>
+                @if (item.Stock != 0)
+                {
+                    <th scope="row">@item.Stock</th>
+                }
+                else
+                {
+                    <th scope="row" class="alert-danger">Out Of Stock</th>
+                }
+
+                <th scope="row">@Html.ActionLink("Transaction", "Edit", new { id = @item.Id })</th>
 
 
-                    </tr>
+            </tr>
 
                 }
             }

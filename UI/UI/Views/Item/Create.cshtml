@@ -14,9 +14,17 @@
 <br />
 @if (Model != null)
 {
-    <div class="alert alert-danger text-center" id="CannotId" style="display:none" role="alert">
+
+
+<div class="alert alert-danger text-center" id="CannotId" style="display:none" role="alert">
         Not enough stock!
     </div>
+}
+else 
+{
+<div class="alert alert-danger text-center" id="CannotId" style="display:none" role="alert">
+    Please add positive numbers!
+</div>
 }
     @using (Html.BeginForm())
     {
@@ -27,7 +35,7 @@
             @Html.AntiForgeryToken()
             @if (Model == null)
             {
-                <button class="btn btn-success btn-sm float-right" formaction="@Url.Action("Create", "Item")" formmethod="post" type="submit">Save</button>
+                <button class="btn btn-success btn-sm float-right" formaction="@Url.Action("Create", "Item")" formmethod="post" type="submit" onclick="return IsPositiveNumber();">Save</button>
             }
             else
             {
@@ -132,7 +140,7 @@
                     {
                         <div class="col-md-1">
                             @Html.Label("Available Stock", "Cost", new { @style = "font-weight: bold;" })
-                            <input type="number" step="0.01" minlength="1" name="itemCostDetails.Cost" maxlength="6" id="itemCostDetails.CostId" style="width: 80px;" required />
+                            <input type="number"  step="0.01" minlength="1" name="itemCostDetails.Cost" maxlength="6" id="CostId" style="width: 80px;" required />
                             @Html.ValidationMessageFor(x => x.itemCostDetails.Cost)
                         </div>
                     }
@@ -194,14 +202,18 @@
             function Validate() {
                 debugger;
                 let stock = parseInt('@CurrentStock');
+                let Addstock = $('#StockAddId').val()
                 let IsValid = false;
                 let str = $('#ComsumeId').val();
-                if (stock >= parseInt($('#ComsumeId').val()) && str !="") {
+                if (stock >= parseInt($('#ComsumeId').val()) && str != "" && (stock != 0 || $('#CheckStockId').is(":Checked")) && (Addstock != 0 || $('#CheckStockId').is(":Checked")==false)) {
                     IsValid = true;
                 } else
                 {
                     if (str == "") {
-                        $('#CannotId').text('Please enter stock')
+                        if ($('#CheckStockId').is(":Checked")) {
+                            $('#CannotId').text('Please add stock or comsume Stock')
+                        } 
+                       
                         $('#CannotId').show()
                         setTimeout(function () {
                             $('#CannotId').fadeOut('fast');
@@ -214,7 +226,7 @@
                             $('#CannotId').fadeOut('fast');
                         }, 3000);
                     }
-                   
+
                 }
                 return IsValid;
             }
@@ -224,7 +236,25 @@
                 let IsValid = false;
                 $('#ComsumeId').attr("required",false)
             }
-            
+
+
+            function IsPositiveNumber()
+            {
+                debugger;
+                var number = parseFloat($('#CostId').val());
+                var number1 = parseInt( $('#StockAddId').val());
+                if (number > 0 && number1>0) {
+                    return true;
+                } else
+                {
+                    $('#CannotId').show()
+                    setTimeout(function () {
+                        $('#CannotId').fadeOut('fast');
+                    }, 3000);
+                    return false;
+                }
+
+            }
         </script>
 
     }

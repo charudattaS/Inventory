@@ -128,7 +128,7 @@ namespace DalAccess.PgsqlDal
                                     from 
                                     itemcategorydemo ic
                                     inner join itemdemo i on i.itemcategorydemoid=ic.id 
-                                    where i.purchasein>0 and (i.purchasein-i.purchaseout)>0 and i.isactive=@isused";
+                                    where i.purchasein>0  and i.isactive=@isused";
                     com.Parameters.AddWithValue("@isused", IsUsed);
                     NpgsqlDataReader dr = com.ExecuteReader();
                     while (dr.Read())

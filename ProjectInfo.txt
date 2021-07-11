@@ -1,0 +1,57 @@
+ShopBridge Inventory management.
+
+Tables used are as bellow.
+1. ItemCategoryDemo.
+Main fields.
+                   1.Id
+                   2.Name
+                   3.IsActive
+2. ItemDemo
+                   1.Id
+                   2.ItemCategoryDemoId
+                   3.Name
+                   4.PurchaseIn
+                   5.PurchaseOut
+                   6.IsActive
+3.ItemCostDetails
+                   1.Id
+                   2.ItemId
+                   3.Cost
+                   4.IsActive
+4.Login
+	           1.Id
+                   2.Username
+                   3.password
+                   4.isadmin
+	           5.isactive
+________________________________________________________________________________________________________________________________
+Used 3 layers for software development
+1.Model.
+              Model is an Class library Project
+Created four model classes.this model is used in WebApi and Asp.net code as a reference.have to build project and copy model.dll and 
+paste into folder Modeldll to get referece for both projects.
+               1)Login.
+               2)ItemCategory.
+               3)Item.
+               4)ItemStockTransaction:-This class is Transaction(Complex object class) Used Item and ItemCategory models
+Where this is main transaction model I have used for this project.
+________________________________________________________________________________________________________________________________
+2.User interference.(UI)
+                 This is Asp.Net Core Web MVC app. This project handles User Interference UI and routing requests to WebApi
+I have also created HttpClient class to communicate with WebApi in which Post, Put and Delete calls are fully implemented.
+________________________________________________________________________________________________________________________________
+3.WebApi.
+                 This is ASP.Net Core WebApi project, This project is layered architecture using
+1.SOLID PRINCIPAL.
+2.Repository Pattern.
+3.Dependency Injection.
+                  Layers:1)WebApi. 2)BussinessAccessLayer 3)DataAccessLayer
+
+1."UI" Project communicate with "WebApi Controller" as per Routing requests.
+2.WebApi controller uses dependency injection
+3.Controller call goes to BussinessAccessLayer class library project in which I have wrote code using all business logic..
+4.BussinessAccessLayer call goes to
+DataAccessLayer in which I have used repository pattern Created public Interface in which I have declared methods which is 
+further defined in class  communicating database(PostgreSql).Dal layer returns data from database to Bal layer , 
+further Bal layer returns data to WebApi Controller and WebApi Controller returns data to UI controller.
+________________________________________________________________________________________________________________________________

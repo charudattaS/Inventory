@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "S+NXJIRPD7lnbfRLPI3iOsNwcuhkgbkCrYMg+0B8UeEMrfaRlj2dOb6yOUQoaWwmKq9/e/zTsXqJIoq3pec6Vg==",
+  "success": true,
+  "projectFilePath": "D:\\Assignment\\Inventory\\InventoryWebApi\\InventoryWebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\npgsql\\5.0.7\\npgsql.5.0.7.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

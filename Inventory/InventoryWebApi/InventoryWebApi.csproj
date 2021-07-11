@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogics\BusinessLogics.csproj" />
+    <ProjectReference Include="..\DalAccess\DalAccess.csproj" />
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Model">
+      <HintPath>..\..\ModelDll\Model.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

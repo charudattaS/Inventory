@@ -1,0 +1,7 @@
+D:\Assignment\Inventory\UI\obj\Debug\netcoreapp3.1\UI.csproj.AssemblyReference.cache
+D:\Assignment\Inventory\UI\obj\Debug\netcoreapp3.1\UI.AssemblyInfoInputs.cache
+D:\Assignment\Inventory\UI\obj\Debug\netcoreapp3.1\UI.AssemblyInfo.cs
+D:\Assignment\Inventory\UI\obj\Debug\netcoreapp3.1\UI.csproj.CoreCompileInputs.cache
+D:\Assignment\Inventory\UI\obj\Debug\netcoreapp3.1\UI.MvcApplicationPartsAssemblyInfo.cache
+D:\Assignment\Inventory\UI\obj\Debug\netcoreapp3.1\UI.RazorAssemblyInfo.cache
+D:\Assignment\Inventory\UI\obj\Debug\netcoreapp3.1\UI.RazorAssemblyInfo.cs

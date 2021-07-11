@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "O89dzb/SVWelEd7VRHHxajGA9J/+MlBSUt18a8nWJS3TLI+/f9B7W9ElwDqujEjoVmJhAPk6J9tydW6fgm1FtA==",
+  "success": true,
+  "projectFilePath": "D:\\Assignment\\Inventory\\UI\\UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\npgsql\\5.0.7\\npgsql.5.0.7.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

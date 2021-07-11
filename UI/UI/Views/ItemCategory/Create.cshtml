@@ -1,0 +1,41 @@
+﻿@model Model.ItemCategory
+
+<br />
+<br />
+<br />
+<div class="container-fluid">
+    <div>
+        <h5>Item</h5>
+    </div>
+    @using (Html.BeginForm())
+    {
+
+
+        @Html.AntiForgeryToken()
+        @if (Model == null)
+        {
+            <button class="btn btn-success btn-sm float-right" formaction="@Url.Action("Create", "ItemCategory")" formmethod="post" type="submit">Save</button>
+        }
+        else
+        {
+            @Html.HiddenFor(x => x.Id)
+            @Html.HiddenFor(x => x.ShopId)
+        <div>
+            <button class="btn btn-success btn-sm float-left" style="margin-left: 950px;" formaction="@Url.Action("Edit", "ItemCategory")" formmethod="post" type="submit">Update</button>
+            <button class="btn btn-danger btn-sm float-right" formaction="@Url.Action("Delete", "ItemCategory")" formmethod="post" type="submit">Delete</button>
+        </div>
+            
+        }
+        <div class="clearfix"></div>
+        <br />
+        @Html.Label("Category Name")
+        @Html.TextBoxFor(x => x.Name, "", new { @minlength = "1", @maxlength = "20", @required = "@required" })
+        @Html.ValidationMessageFor(x => x.Name)
+
+    }
+<div class="col-1">
+    @Html.ActionLink("Back", "Index", "Itemcategory")
+</div>
+  
+</div>
+    

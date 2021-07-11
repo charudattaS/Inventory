@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ewUOh37FCoIdGVBUjo2hhg6almcqkfbH5qkE95xCOMIJ//ekFKm5d7m2X9GCp83ZTiam7//AHKhXQ1QtBRIEfA==",
+  "success": true,
+  "projectFilePath": "D:\\Assignment\\Inventory\\BusinessLogics\\BusinessLogics.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\npgsql\\5.0.7\\npgsql.5.0.7.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

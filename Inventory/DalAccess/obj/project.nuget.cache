@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "6PzbydtLU2TZ9QtM3msrCT1p2u3vnaxNDWfyTOwhE6UvGFrHTE/4k+GpGsoPgFCIraoDQBxYsksiEMn0Ul1x0Q==",
+  "success": true,
+  "projectFilePath": "D:\\Assignment\\Inventory\\DalAccess\\DalAccess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\npgsql\\5.0.7\\npgsql.5.0.7.nupkg.sha512",
+    "C:\\Users\\charu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

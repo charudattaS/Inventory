@@ -49,4 +49,11 @@ I have also created HttpClient class to communicate with WebApi in which Post, P
 2.WebApi controller uses dependency injection
 3.Controller call goes to BussinessAccessLayer class library project in which I have wrote code using all business logic..
 4.BussinessAccessLayer call goes to
-DataAccessLayer in which I have used repository pattern Created public Interface in which I have declared methods which is further defined in class  communicating database(PostgreSql).Dal layer returns data from database to Bal layer , further Bal layer returns data to WebApi Controller and WebApi Controller returns data to UI controller.
+DataAccessLayer in which I have used repository pattern Created public Interface in which
+I have declared methods which is further defined in class  communicating database(PostgreSql).
+Dal layer returns data from database to Bal layer , further Bal layer returns data to WebApi Controller and WebApi Controller returns data to UI controller.
+
+Project Devlopment Time(ETA):- 
+1.UI(Asp.net Core mvc app) 16hrs
+2.WebApi(Asp.net Core webapi app) 24hrs
+3.Model and DataBase 1hrs

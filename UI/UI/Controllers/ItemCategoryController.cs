@@ -15,29 +15,38 @@ namespace UI.Controllers
 
         public async Task<IActionResult> Index()
         {
+            try
+            {
+                var data = await HttpHelper.Get<List<ItemCategory>>("https://localhost:44315/api/ItemCategory/GetList/");
+                #region TempDataRegion
+                if (TempData["Saved"] == null)
+                {
+                    TempData["Saved"] = false;
+                }
+                if (TempData["Update"] == null)
+                {
+                    TempData["Update"] = false;
+                }
+                if (TempData["Delete"] == null)
+                {
+                    TempData["Delete"] = false;
+                }
+                if (TempData["Cannot"] == null)
+                {
+                    TempData["Cannot"] = false;
+                }
+                #endregion
+                return View(data);
+            }
+            catch (Exception ex)
+            {
+                TempData["error"] = ex.Message;
+                return RedirectToAction("ApplicationUserLogin", "Login");
+            }
 
-            var data = await HttpHelper.Get<List<ItemCategory>>("https://localhost:44315/api/ItemCategory/GetList/");
-            #region TempDataRegion
-            if (TempData["Saved"] == null)
-            {
-                TempData["Saved"] = false;
-            }
-            if (TempData["Update"] == null)
-            {
-                TempData["Update"] = false;
-            }
-            if (TempData["Delete"] == null)
-            {
-                TempData["Delete"] = false;
-            }
-            if (TempData["Cannot"] == null)
-            {
-                TempData["Cannot"] = false;
-            }
-            #endregion
 
 
-            return View(data);
+
         }
 
         // GET: ItemCategoryController/Details/5
@@ -67,17 +76,29 @@ namespace UI.Controllers
                 #endregion
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+
+                TempData["error"] = ex.Message;
+                return RedirectToAction("Index", "ItemCategory");
             }
         }
 
         // GET: ItemCategoryController/Edit/5
         public async Task<IActionResult> Edit(Guid id)
         {
-            var data = await HttpHelper.Get<ItemCategory>("https://localhost:44315/api/ItemCategory/GetById/" + id + "");
-            return View("Create", data);
+            try
+            {
+                var data = await HttpHelper.Get<ItemCategory>("https://localhost:44315/api/ItemCategory/GetById/" + id + "");
+                return View("Create", data);
+            }
+            catch (Exception ex)
+            {
+
+                TempData["error"] = ex.Message;
+                return RedirectToAction("Index", "ItemCategory");
+            }
+
         }
 
         // POST: ItemCategoryController/Edit/5
@@ -92,14 +113,15 @@ namespace UI.Controllers
                 #region TempDataRegion
                 if (data.Errors.Count < 1)
                 {
-                  
+
                     TempData["Delete"] = false;
                     TempData["Saved"] = false;
                     TempData["Update"] = true;
                     TempData["Cannot"] = false;
-                    
+
                 }
-                else {
+                else
+                {
                     TempData["Delete"] = false;
                     TempData["Saved"] = false;
                     TempData["Update"] = false;
@@ -108,17 +130,29 @@ namespace UI.Controllers
                 #endregion
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+
+                TempData["error"] = ex.Message;
+                return RedirectToAction("Index", "ItemCategory");
             }
         }
 
         // GET: ItemCategoryController/Delete/5
         public async Task<IActionResult> Delete(Guid id)
         {
-            var data = await HttpHelper.Get<ItemCategory>("https://localhost:44315/api/ItemCategory/GetById/" + id + "");
-            return View("Create", data);
+            try
+            {
+                var data = await HttpHelper.Get<ItemCategory>("https://localhost:44315/api/ItemCategory/GetById/" + id + "");
+                return View("Create", data);
+            }
+            catch (Exception ex)
+            {
+
+                TempData["error"] = ex.Message;
+                return RedirectToAction("Index", "ItemCategory");
+            }
+
         }
 
         // POST: ItemCategoryController/Delete/5
@@ -139,7 +173,7 @@ namespace UI.Controllers
                     TempData["Update"] = false;
                     TempData["Cannot"] = false;
                 }
-                else 
+                else
                 {
                     TempData["Delete"] = false;
                     TempData["Saved"] = false;
@@ -150,9 +184,10 @@ namespace UI.Controllers
 
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                TempData["error"] = ex.Message;
+                return RedirectToAction("Index", "ItemCategory");
             }
         }
     }

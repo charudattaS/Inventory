@@ -33,7 +33,7 @@ namespace BusinessLogics.Bal
                         com.CommandType = System.Data.CommandType.Text;
                         com.CommandText = @"select ic.id from itemcategorydemo ic
                         inner join itemdemo i on i.itemcategorydemoid=ic.id
-                        where ic.id=@id and ic.isactive=@isused and i.isactive=@isused and (i.purchasein-i.purchaseout)>0";
+                        where ic.id=@id and ic.isactive=@isused and i.isactive=@isused";
                         com.Parameters.AddWithValue("@id", Id);
                         com.Parameters.AddWithValue("@isused", IsUsed);
                         var r=com.ExecuteReader();

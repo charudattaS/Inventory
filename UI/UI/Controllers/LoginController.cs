@@ -19,16 +19,26 @@ namespace UI.Controllers
         [HttpPost]
         public async Task<IActionResult> ApplicationUserLogin(ApplicationUser applicationUser)
         {
-            var data = await HttpHelper.Post<ApplicationUser>("https://localhost:44315/", "api/Login/Login", applicationUser);
-            ViewBag.Name = data.IsAdmin;
-            if (data.IsUsed) 
+            try
             {
-                if (data.IsAdmin)
+                var data = await HttpHelper.Post<ApplicationUser>("https://localhost:44315/", "api/Login/Login", applicationUser);
+                ViewBag.Name = data.IsAdmin;
+                if (data.IsUsed)
                 {
-                    return RedirectToAction("Index", "ItemCategory");
+                    if (data.IsAdmin)
+                    {
+                        return RedirectToAction("Index", "ItemCategory");
+                    }
                 }
+                return View("Login", data);
             }
-            return View("Login", data);
+            catch (Exception ex)
+            {
+
+                TempData["error"] = ex.Message;
+                return RedirectToAction("ApplicationUserLogin", "Login");
+            }
+          
         }
     }
 }

@@ -37,7 +37,7 @@ namespace DalAccess.PgsqlDal
                         if (!dr.HasRows) 
                         {
                             applicationUser.IsUsed = false;
-                            
+                            applicationUser.Errors.Add("Wrong credentials.");
                         }
                         while (dr.Read())
                         {

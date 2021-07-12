@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "72UkQu41vN7/UUxIQJ8pZ2tXz4C7xpE/gCVWBlheu8Wt87/I+Y6dqwpvI9/nKTPxzirgibn4Tgxh6XKpbGZLlA==",
+  "dgSpecHash": "Rbxdn7zkYrp2IywyrDtgSAH7q1xA3NQhxSmhyC2GQJOqZ2+SrlRsR7JWpUHQx6P1385H9mAKAj1W7sirDoroQA==",
   "success": true,
-  "projectFilePath": "D:\\Assignment\\Model\\Model\\Model.csproj",
+  "projectFilePath": "D:\\InventoryProject\\Model\\Model\\Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

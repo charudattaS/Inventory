@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Assignment\\Model\\Model\\Model.csproj",
+      "projectUniqueName": "D:\\InventoryProject\\Model\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "D:\\Assignment\\Model\\Model\\Model.csproj",
+      "projectPath": "D:\\InventoryProject\\Model\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\charu\\.nuget\\packages\\",
-      "outputPath": "D:\\Assignment\\Model\\Model\\obj\\",
+      "outputPath": "D:\\InventoryProject\\Model\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\charu\\AppData\\Roaming\\NuGet\\NuGet.Config",

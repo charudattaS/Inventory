@@ -24,22 +24,38 @@ namespace BusinessLogics.Bal
 
         public ItemCategory Insert(ItemCategory itemCategory) 
         {
-            itemCategory.IsUsed = true;
-            itemCategory =dal.Insert(itemCategory);
+            if (itemCategory.Name.Length > 20) 
+            {
+                itemCategory.Errors.Add("Only 20 Charectors allowed.");
+            }
+            else 
+            {
+                itemCategory.IsUsed = true;
+                itemCategory = dal.Insert(itemCategory);
+            }
+           
             return itemCategory;
         }
 
         public ItemCategory Update(ItemCategory itemCategory)
         {
-            if (!dal.CheckRefereceInItem(itemCategory.Id, true))
+            if (itemCategory.Name.Length > 20)
             {
-                itemCategory.IsUsed = true;
-                itemCategory = dal.Update(itemCategory);
+                itemCategory.Errors.Add("Only 20 Charectors allowed.");
             }
-            else
+            else 
             {
-                itemCategory.Errors.Add("cannot update item listed under this category");
+                if (!dal.CheckRefereceInItem(itemCategory.Id, true))
+                {
+                    itemCategory.IsUsed = true;
+                    itemCategory = dal.Update(itemCategory);
+                }
+                else
+                {
+                    itemCategory.Errors.Add("cannot update item listed under this category");
+                }
             }
+         
             return itemCategory;
         }
         public ItemCategory Delete(ItemCategory itemCategory)

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace BusinessLogics.TransactionBal
 {
-   public class ItemStockTransaction
+    public class ItemStockTransaction
     {
         private ItemBal itembal;
         private ItemCostDetailsBal itemCostDetailsBal;
@@ -19,42 +19,76 @@ namespace BusinessLogics.TransactionBal
         }
         public ItemTrans Insert(ItemTrans itemTrans)
         {
-            itemTrans.item.IsUsed = itemTrans.item.IsDeleted== true?false:true;
-            itemTrans.item=itembal.Insert(itemTrans.item);
-            if (itemTrans.itemCostDetails == null) 
+            if (itemTrans.itemCostDetails.Cost > 0)
             {
-                itemTrans.itemCostDetails = new ItemCostDetails();
+                itemTrans.item.IsUsed = itemTrans.item.IsDeleted == true ? false : true;
+                itemTrans.item = itembal.Insert(itemTrans.item);
+                if (itemTrans.itemCostDetails == null)
+                {
+                    itemTrans.itemCostDetails = new ItemCostDetails();
+                }
+                itemTrans.itemCostDetails.ItemId = itemTrans.item.Id;
+                itemTrans.itemCostDetails.IsUsed = itemTrans.item.IsDeleted == true ? false : true;
+                itemTrans.itemCostDetails = itemCostDetailsBal.Insert(itemTrans.itemCostDetails);
             }
-            itemTrans.itemCostDetails.ItemId = itemTrans.item.Id;
-            itemTrans.itemCostDetails.IsUsed = itemTrans.item.IsDeleted == true ? false : true;
-            itemTrans.itemCostDetails = itemCostDetailsBal.Insert(itemTrans.itemCostDetails);
+            else
+            {
+                itemTrans.item.Errors.Add("Only Positive Cost Are Allowed.");
+            }
+            if (itemTrans.item.PurchaseIn < 1 && itemTrans.item.PurchaseOut < 1)
+            {
+                itemTrans.item.Errors.Add("Only Positive Stock And Consuption Allowed.");
+            }
             return itemTrans;
         }
 
         public ItemTrans Update(ItemTrans itemTrans)
         {
 
+
             if (itemTrans.item.IsComsumed)
             {
-                itemTrans.item=itembal.ConsumeStock(itemTrans.item);
+                if (itemTrans.item.PurchaseOut > 0)
+                {
+                    itemTrans.item = itembal.ConsumeStock(itemTrans.item);
+                }
+                else
+                {
+                    itemTrans.item.Errors.Add("Only Positive Stock And Consuption Allowed.");
+                }
+
             }
-            else 
+            else
             {
-                itemTrans.item = itembal.AddStock(itemTrans.item);
+                if (itemTrans.item.PurchaseIn > 0)
+                {
+                    itemTrans.item = itembal.AddStock(itemTrans.item);
+                }
+                else
+                {
+                    itemTrans.item.Errors.Add("Only Positive Stock And Consuption Allowed.");
+                }
             }
+
+
+
+
+
+
+
             return itemTrans;
         }
 
-       
+
 
         public ItemTrans GetByItemId(Guid ItemId)
         {
             ItemTrans itemTrans = new ItemTrans();
-            itemTrans.item= itembal.GetById(ItemId);
-            itemTrans.itemCostDetails=itemCostDetailsBal.GetByItemId(ItemId);
+            itemTrans.item = itembal.GetById(ItemId);
+            itemTrans.itemCostDetails = itemCostDetailsBal.GetByItemId(ItemId);
             return itemTrans;
         }
 
-       
+
     }
 }

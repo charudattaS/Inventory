@@ -21,6 +21,7 @@ namespace BusinessLogics.Bal
             Item=dal.AddStock(Item);
             return Item;
         }
+
         public virtual Item ConsumeStock(Item Item)
         {
             Item=dal.ConsumeStock(Item);

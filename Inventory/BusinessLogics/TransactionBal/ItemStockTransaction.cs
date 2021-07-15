@@ -17,7 +17,11 @@ namespace BusinessLogics.TransactionBal
             this.itemCostDetailsBal = itemCostDetailsBal;
 
         }
-        public ItemTrans Insert(ItemTrans itemTrans)
+        public ItemStockTransaction()
+        {
+            
+        }
+        public virtual ItemTrans Insert(ItemTrans itemTrans)
         {
             if (itemTrans.itemCostDetails.Cost > 0)
             {
@@ -42,7 +46,7 @@ namespace BusinessLogics.TransactionBal
             return itemTrans;
         }
 
-        public ItemTrans Update(ItemTrans itemTrans)
+        public virtual ItemTrans Update(ItemTrans itemTrans)
         {
 
 
@@ -81,7 +85,7 @@ namespace BusinessLogics.TransactionBal
 
 
 
-        public ItemTrans GetByItemId(Guid ItemId)
+        public virtual ItemTrans GetByItemId(Guid ItemId)
         {
             ItemTrans itemTrans = new ItemTrans();
             itemTrans.item = itembal.GetById(ItemId);

@@ -12,32 +12,36 @@ namespace BusinessLogics.Bal
         {
             this.dal = dal;
         }
-        public Item AddStock(Item Item) 
+        public ItemBal()
+        {
+            
+        }
+        public virtual Item AddStock(Item Item) 
         {
             Item=dal.AddStock(Item);
             return Item;
         }
-        public Item ConsumeStock(Item Item)
+        public virtual Item ConsumeStock(Item Item)
         {
             Item=dal.ConsumeStock(Item);
             return Item;
         }
          
-        public List<Item> Get( bool IsUsed = true)
+        public virtual List<Item> Get( bool IsUsed = true)
         {
             List<Item> List = new List<Item>();
             List = dal.Fetch();
             return List;
         }
 
-        public Item Insert(Item item)
+        public virtual Item Insert(Item item)
         {
             item.IsUsed = true;
             item = dal.Insert(item);
             return item;
         }
 
-        public Item Update(Item item)
+        public virtual Item Update(Item item)
         {
            
             item.IsUsed = true;
@@ -45,7 +49,7 @@ namespace BusinessLogics.Bal
           
             return item;
         }
-        public Item Delete(Item item)
+        public virtual Item Delete(Item item)
         {
                 item.IsUsed = false;
                 item = dal.Delete(item);
@@ -53,7 +57,7 @@ namespace BusinessLogics.Bal
             return item;
         }
 
-        public Item GetById(Guid Id, bool IsUsed = true)
+        public virtual Item GetById(Guid Id, bool IsUsed = true)
         {
             Item data = new Item();
             data = dal.FetchById(Id);

@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DalAccess", "DalAccess\DalA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryWebApi", "InventoryWebApi\InventoryWebApi.csproj", "{B5471878-2E08-4789-B679-83FE95AFEC38}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTest.csproj", "{ACB0F85F-6CD8-4E87-9825-2A5D1915E0A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{B5471878-2E08-4789-B679-83FE95AFEC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5471878-2E08-4789-B679-83FE95AFEC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5471878-2E08-4789-B679-83FE95AFEC38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACB0F85F-6CD8-4E87-9825-2A5D1915E0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB0F85F-6CD8-4E87-9825-2A5D1915E0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB0F85F-6CD8-4E87-9825-2A5D1915E0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB0F85F-6CD8-4E87-9825-2A5D1915E0A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

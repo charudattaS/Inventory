@@ -14,15 +14,19 @@ namespace BusinessLogics.Bal
         {
             this.dal = dal;
         }
+        public ItemCategoryBal()
+        {
+            
+        }
 
-        public List<ItemCategory> Get( bool IsUsed = true) 
+        public virtual List<ItemCategory> Get( bool IsUsed = true) 
         {
             List<ItemCategory> List = new List<ItemCategory>();
             List = dal.Fetch();
             return List;
         }
 
-        public ItemCategory Insert(ItemCategory itemCategory) 
+        public virtual ItemCategory Insert(ItemCategory itemCategory) 
         {
             if (itemCategory.Name.Length > 20) 
             {
@@ -37,7 +41,7 @@ namespace BusinessLogics.Bal
             return itemCategory;
         }
 
-        public ItemCategory Update(ItemCategory itemCategory)
+        public virtual ItemCategory Update(ItemCategory itemCategory)
         {
             if (itemCategory.Name.Length > 20)
             {
@@ -58,7 +62,7 @@ namespace BusinessLogics.Bal
          
             return itemCategory;
         }
-        public ItemCategory Delete(ItemCategory itemCategory)
+        public virtual ItemCategory Delete(ItemCategory itemCategory)
         {
             if (!dal.CheckRefereceInItem(itemCategory.Id, true))
             {
@@ -74,14 +78,14 @@ namespace BusinessLogics.Bal
             return itemCategory;
         }
 
-        public ItemCategory GetById(Guid Id, bool IsUsed = true) 
+        public virtual ItemCategory GetById(Guid Id, bool IsUsed = true) 
         {
             ItemCategory data = new ItemCategory();
             data = dal.FetchById(Id);
             return data;
         }
 
-        public bool CheckRefereceInItem(Guid Id, bool IsUsed = true) 
+        public virtual bool CheckRefereceInItem(Guid Id, bool IsUsed = true) 
         {
             var IsRefered = dal.CheckRefereceInItem(Id, IsUsed);
             return IsRefered;

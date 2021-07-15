@@ -14,22 +14,26 @@ namespace BusinessLogics.Bal
         {
             this.dal = dal;
         }
+        public ItemCostDetailsBal()
+        {
+          
+        }
 
-        public List<ItemCostDetails> Get(bool IsUsed = true)
+        public virtual List<ItemCostDetails> Get(bool IsUsed = true)
         {
             List<ItemCostDetails> List = new List<ItemCostDetails>();
             List = dal.Fetch();
             return List;
         }
 
-        public ItemCostDetails Insert(ItemCostDetails itemCostDetails)
+        public virtual ItemCostDetails Insert(ItemCostDetails itemCostDetails)
         {
             itemCostDetails.IsUsed = true;
             itemCostDetails = dal.Insert(itemCostDetails);
             return itemCostDetails;
         }
 
-        public ItemCostDetails Update(ItemCostDetails itemCostDetails)
+        public virtual ItemCostDetails Update(ItemCostDetails itemCostDetails)
         {
 
             itemCostDetails.IsUsed = true;
@@ -37,7 +41,7 @@ namespace BusinessLogics.Bal
            
             return itemCostDetails;
         }
-        public ItemCostDetails Delete(ItemCostDetails itemCostDetails)
+        public virtual ItemCostDetails Delete(ItemCostDetails itemCostDetails)
         {
 
             itemCostDetails.IsUsed = false;
@@ -46,7 +50,7 @@ namespace BusinessLogics.Bal
             return itemCostDetails;
         }
 
-        public ItemCostDetails GetByItemId(Guid ItemId, bool IsUsed = true)
+        public virtual ItemCostDetails GetByItemId(Guid ItemId, bool IsUsed = true)
         {
             ItemCostDetails data = new ItemCostDetails();
             data = dal.FetchByItemId(ItemId);

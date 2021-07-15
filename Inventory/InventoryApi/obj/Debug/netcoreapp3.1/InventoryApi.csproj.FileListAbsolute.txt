@@ -1,5 +1,0 @@
-C:\Users\charu\source\repos\Inventory\InventoryApi\obj\Debug\netcoreapp3.1\InventoryApi.csproj.AssemblyReference.cache
-C:\Users\charu\source\repos\Inventory\InventoryApi\obj\Debug\netcoreapp3.1\InventoryApi.AssemblyInfoInputs.cache
-C:\Users\charu\source\repos\Inventory\InventoryApi\obj\Debug\netcoreapp3.1\InventoryApi.AssemblyInfo.cs
-C:\Users\charu\source\repos\Inventory\InventoryApi\obj\Debug\netcoreapp3.1\InventoryApi.csproj.CoreCompileInputs.cache
-C:\Users\charu\source\repos\Inventory\InventoryApi\obj\Debug\netcoreapp3.1\InventoryApi.MvcApplicationPartsAssemblyInfo.cache
